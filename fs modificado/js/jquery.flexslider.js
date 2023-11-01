@@ -151,44 +151,44 @@
         }
 // ↑ Fin del agragado =============================================================================
 // ARROWNAVIGATION /* Seguir arreglando */
-if(slider.vars.arrownavigation){
-  slider.arrownavigationScaffold = $('<button class="btn btn-display-left">&#10094;</button><button class="btn btn-display-right">&#10095;</button>');
-  
-  $('.flex-viewport').mouseenter(function(){
-    $('.woocommerce-product-gallery__wrapper').after(slider.arrownavigationScaffold);
-    
-    if(slider.currentSlide == 0){
-      $('.btn-display-left').remove();
-    }
-    if(slider.currentSlide == slider.last){
-      $('.btn-display-right').remove();
-    }
-    function verificar(){
-      if(slider.currentSlide == 0){
-        $('.btn-display-left').remove();
-      }else{
-        (!document.querySelector('.btn-display-left'))?$('.woocommerce-product-gallery__wrapper').after('<button class="btn btn-display-left">&#10094;</button>'):"";
-      }
-      if(slider.currentSlide == slider.last){
-        $('.btn-display-right').remove();
-      }else{
-        (!document.querySelector('.btn-display-right'))?$('.woocommerce-product-gallery__wrapper').after('<button class="btn btn-display-right">&#10095;</button>'):"";
-      }
-    }
-  
-    $('.btn-display-left').mouseup(function(){
-      (slider.currentSlide == 0)?slider.flexAnimate(slider.currentSlide,slider.vars.pauseOnAction):slider.flexAnimate(slider.getTarget('prev'), slider.vars.pauseOnAction);
-      verificar();
-    });
-    $('.btn-display-right').mouseup(function(){
-      (slider.currentSlide == slider.last)?slider.flexAnimate(slider.currentSlide,slider.vars.pauseOnAction):slider.flexAnimate(slider.getTarget('next'), slider.vars.pauseOnAction);
-      verificar();
-    });
-  })
-  $('.flex-viewport').mouseleave(function(){
-    $('.btn').remove();
-  })
-}
+        if(slider.vars.arrownavigation){
+          slider.arrownavigationScaffold = $('<button class="btn btn-display-left">&#10094;</button><button class="btn btn-display-right">&#10095;</button>');
+          
+          $('.holamundo').mouseenter(function(){
+            $('.slidesprin').after(slider.arrownavigationScaffold);
+            
+            if(slider.currentSlide == 0){
+              $('.btn-display-left').remove();
+            }
+            if(slider.currentSlide == slider.last){
+              $('.btn-display-right').remove();
+            }
+            function verificar(){
+              if(slider.currentSlide == 0){
+                $('.btn-display-left').remove();
+              }else{
+                (!document.querySelector('.btn-display-left'))?$('.slidesprin').after('<button class="btn btn-display-left">&#10094;</button>'):"";
+              }
+              if(slider.currentSlide == slider.last){
+                $('.btn-display-right').remove();
+              }else{
+                (!document.querySelector('.btn-display-right'))?$('.slidesprin').after('<button class="btn btn-display-right">&#10095;</button>'):"";
+              }
+            }
+          
+            $('.btn-display-left').mouseup(function(){
+              (slider.currentSlide == 0)?slider.flexAnimate(slider.currentSlide,slider.vars.pauseOnAction):slider.flexAnimate(slider.getTarget('prev'), slider.vars.pauseOnAction);
+              verificar();
+            });
+            $('.btn-display-right').mouseup(function(){
+              (slider.currentSlide == slider.last)?slider.flexAnimate(slider.currentSlide,slider.vars.pauseOnAction):slider.flexAnimate(slider.getTarget('next'), slider.vars.pauseOnAction);
+              verificar();
+            });
+          })
+          $('.holamundo').mouseleave(function(){
+            $('.btn').remove();
+          })
+        }
         // PAUSEPLAY
         if (slider.vars.pausePlay) { methods.pausePlay.setup(); }
 

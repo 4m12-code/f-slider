@@ -273,27 +273,29 @@ html[xmlns] .flexslider .slides {
   position:absolute;
   top:50%;
   left:0%;
-  height: 53.48px;
+  height: 100%;
   transform:translate(0%,-50%);
   -ms-transform:translate(-0%,-50%);
-  background-color: transparent;
+  background-color: black;
+  color: white;
 }
 .btn-display-right{
   position:absolute;
   top:50%;
   right:0%;
-  height: 53.48px;
+  height: 100%;
   transform:translate(0%,-50%);
   -ms-transform:translate(0%,-50%);
-  background-color: transparent;
+  background-color: black;
+  color: white;
 }
 .btn-display-left:hover, .btn-display-right:hover{
-  background-color: rgba(255, 255, 255, 0.512);
+  /* background-color: rgba(255, 255, 255, 0.512); */
   /* opacity: .15; */
-  color: #717171;
-  border-radius: 50%;
-  cursor: crosshair;
-  border: 1px solid #000;
+  /* color: #717171; */
+  /* border-radius: 50%; */
+  /* cursor: crosshair; */
+  /* border: 1px solid #000; */
 }
 
 /* ====================================================================================================================

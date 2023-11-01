@@ -18,6 +18,7 @@ jQuery(function($) {
     slideshow: false,//Mueve solo el slide
     direction: "horizontal",
     mousedrag: true,  // Habilitar el arrastre
+    arrownavigation:true
   });
 
   $('.holamundo').append('<h3>Hola mundo cruel</h3>')
